@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sudoku_Solver
 {
-    public class Class1
+    public class Backend_Logic
     {
     }
 }
