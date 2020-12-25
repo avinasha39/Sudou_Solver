@@ -5,9 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sudoku_Solver_Module"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-        
+        Title="MainWindow" Width="900" Height="900" >
+    <Grid Width="Auto" Height="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.75*"></RowDefinition>
+            <RowDefinition Height="0.25*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.33*"></ColumnDefinition>
+            <ColumnDefinition Width="0.33*"></ColumnDefinition>
+            <ColumnDefinition Width="0.33*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <local:MainGrid Grid.ColumnSpan="3"></local:MainGrid>
+
+        <Button Grid.Row="1" Grid.Column="0" x:Name="NewGame" Content="New Game" Margin="56,72,72,74" />
+
+        <Button Grid.Row="1" Grid.Column="1" x:Name="Submit" Content="Submit" Margin="70,72,56,74" />
+
+        <Button Grid.Row="1" Grid.Column="2" x:Name="ShowSolution" Content="Show Solution" Margin="72,72,50,74" />
+
     </Grid>
 </Window>
